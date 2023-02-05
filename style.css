@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(32, 78%, 86%);
+    padding: 1rem;
+}
+
+.hero-image {
+    background-image: url("images/image-product-mobile.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
+    margin-bottom: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.hero-container {
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+
+}
+
+.main-page {
+    margin: 2rem;
+    
+}
+
+.perfume {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    letter-spacing: 0.3rem; 
+    line-height: 2rem;  
+
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+}
+
+h1 + p {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    margin-top: 1rem;
+}
+
+.cost {
+    display: flex;
+    margin-top: 2rem;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    gap: 2rem;
+    color:#3D8168;
+
+
+}
+
+
+.cost>p+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    align-self: center;
+    text-decoration: line-through;
+    color: grey;
+    
+}
+
+.cart-btn {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    
+    
+}
+
+.btn {
+    height: 3rem;
+    background-color: #3D8168;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.btn>i {
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #08583b;
+}
+
+@media screen and (min-width: 250px) {
+    .cost {
+        display: flex;
+        margin-top: 2rem;
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        gap: 1rem;
+        color:#3D8168;
+    
+    
+    }
+
+    .cost>p+p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        align-self: center;
+        text-decoration: line-through;
+        color: grey;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-container {
+        display: flex;
+    
+    }
+
+    .hero-image {
+        background-image: url("images/image-product-desktop.jpg");
+        min-width: 50%;
+        margin: 0;
+        border-radius: 1rem 0 0 1rem;
+        
+    
+    }
+
+    .perfume {
+        margin-bottom: 2rem;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h1 + p {
+        margin-top: 2rem;
+        line-height: 2rem;
+        width: 90%;
+    }
+
+    .cost {
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+
+    .cost>p+p {
+        font-size: 1rem;
+    }
+    
+
+    .cart-btn {
+        margin-top: 4rem;
+        
+        
+        
+    }
+}
